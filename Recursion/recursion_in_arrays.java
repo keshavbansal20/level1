@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-public class Main {
+public class recursion_in_arrays {
 
     public static void main(String[] args) throws Exception {
         // write your code here
@@ -21,6 +21,6 @@ public class Main {
         System.out.println(arr[idx]);
         displayArr(arr, idx+1);
     }
-    
+
 
 }
