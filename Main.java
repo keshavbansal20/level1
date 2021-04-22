@@ -1,4 +1,5 @@
-import java.util.*;  
+import java.util.*;
+
 public class Main{
     
     public static class Node{
@@ -21,7 +22,9 @@ public class Main{
         return node;
     }
     public static void display(Node node){
-        
+        if(node==null){
+            return;
+        }
         String str = " <- "+ node.data+" -> ";
         String left = node.left!=null?""+node.left.data:".";
         String right = node.right!=null?""+node.right.data:".";
@@ -38,5 +41,6 @@ public class Main{
     
         Node root = construct(arr , 0 , arr.length-1);
         display(root);
+        
     }
 }
