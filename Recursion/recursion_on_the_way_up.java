@@ -60,7 +60,7 @@ public class recursion_on_the_way_up{
     }
 
     //print getmazepath with jumps
-    public static void printMazePaths(int sr, int sc, int dr, int dc, String psf) {
+    public static void printMazePathswithjumps(int sr, int sc, int dr, int dc, String psf) {
         
         if(sr==dr && sc == dc){
             System.out.println(psf);
