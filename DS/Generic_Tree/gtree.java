@@ -108,7 +108,23 @@ public class gtree {
         }
         System.out.println("Node post " + node.data);
     }
+    //remove print add children
+    public static void levelOrder(Node node){
+        // write your code here
+        Queue<Node> q = new ArrayDeque<>();
+        q.add(node);
+        while(q.size()!=0){
+            Node rn = q.remove();
+            System.out.print(rn.data+" " );
+            for(Node child:rn.children){
+                q.add(child);
+            }
+            
+        }
+        System.out.print(".");
+      }
 
+      
     public static void fun() {
         Integer[] data = {10, 20, 50, null, 60, null, null, 30, 70, null, 80, 110, null,
              120, null, null, 90, null, null, 40, 100, null, null, null};

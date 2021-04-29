@@ -35,6 +35,7 @@ public class tree {
         return root;
     }
 
+    
     public static void display(Node root){
         if(root==null){
             return;
